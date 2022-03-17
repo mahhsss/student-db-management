@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/zdk2sfw.css">
+    <link rel="stylesheet" href="./StudentLogin.css">
+    <title>edu.in</title>
+</head>
+<body onload="load()">
+    <!-- loading -->
+
+        <div id="loading">
+            <h2>edu.in</h2>
+        </div>
+
+    <!--form -->
+
+    <div class="main">
+        <form action="./SecondPage.html">
+            <input type="submit" class="f1" value="Login"/>
+            <div id="box2">
+            <div>
+            <label>Student ID</label>
+            <input type="text" name="id" required/></div> 
+            <div>
+            <label>Password</label>
+            <input type="password" name="password" required/></div>
+            </div>
+            <button class="f1 sb"> <a href="./StudentSignup.html">SignUp</a></button> 
+        </form>
+    </div>
+
+    <!-- script -->
+
+    <script>
+        let preLoad = document.getElementById('loading');
+        function load() {
+            preLoad.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
